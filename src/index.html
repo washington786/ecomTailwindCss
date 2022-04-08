@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-com TailWind Css</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- header section -->
+        <header class="bg-white shadow-sm py-4 container items-center justify-between h-20 px-32 flex sticky">
+
+            <!-- brand name section -->
+            <div class="container items-center justify-start flex w-60 mr-16 cursor-pointer">
+                <svg class="w-12 text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
+                <h4 class="text-5xl capitalize">Inte<span class="text-red-300">rims</span></h4>
+            </div>
+
+            <!-- search bar section -->
+            <div class="container bg-gray-100 shadow-sm flex items-center justify-start rounded-xl">
+                <svg class="w-8 inline-block text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                <input type="search" name="search-input" id="search-input-box" class="h-fit w-full px-2 py-2 bg-gray-100 outline-none" placeholder="What would you like to buy today?">
+            </div>
+
+            <div class="container items-center justify-end flex bg-transparent col-span-1 w-56 ml-14">
+                <div class="container items-center flex justify-end relative cursor-pointer">
+                    <svg class="w-9 text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
+                    <span class="bg-red-500 rounded-full text-white justify-center items-center absolute top-1 right-3 h-5 w-5 text-center py-0">6</span>
+                </div>
+
+                <div class="container items-center flex justify-end relative cursor-pointer">
+                    <svg class="w-9 text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                    <span class="bg-red-500 rounded-full text-white justify-center items-center absolute top-1 right-3 h-5 w-5 text-center py-0">6</span>
+                </div>
+
+                <div class="container items-center flex justify-end relative cursor-pointer">
+                    <svg class="w-9 text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                </div>
+            </div>
+            
+            <!-- icons section -->
+        </header>
+    <!-- end of header section -->
+
+    <!-- navigation bar section-->
+        <nav class="sticky">
+
+            <div class="container bg-red-400 items-center justify-between h-16 w-full flex px-32">
+                
+                <!-- navigation category and list -->
+                <div class="container flex items-center">
+                    <div class="flex items-center cursor-pointer relative group">
+                        <svg class="w-9 text-gray-200 mr-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <span class="text-2xl text-white font-semibold">Categories</span>
+
+                        <div class="shadow-md w-full absolute top-full left-0 bg-white py-4 hidden group-hover:block">
+
+                                <a href="#" class="flex items-center px-5 py-1 hover:text-gray-500 w-full relative border-b ">
+                                    <svg class="w-6 mr-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"></path></svg>
+                                    <span>Laptops</span>
+                                </a>
+
+                                <a href="#" class="flex items-center px-5 py-3 hover:text-gray-500 relative border-b">
+                                    <svg class="w-6 mr-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                                    <span>Mobiles</span>
+                                </a>
+
+                                <a href="#" class="flex items-center px-5 py-3 hover:text-gray-500 border-b">
+                                    <svg class="w-6 mr-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Printers</span>
+                                </a>
+                                <a href="#" class="flex items-center px-5 py-2 hover:text-gray-500 border-none">
+                                    <svg class="w-6 mr-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 7H7v6h6V7z"></path><path fill-rule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clip-rule="evenodd"></path></svg>
+                                    <span>Furniture</span>
+                                </a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="flex mx-16">
+
+                        <div class="ml-10">
+                            <ul class="flex">
+                                <li>
+                                    <a href="#"><span class="text-gray-200 mx-5 font-roboto text-xl cursor-pointer font-semibold hover:underline">Home</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text-gray-200 mx-5 font-roboto text-xl cursor-pointer hover:underline">Shop</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text-gray-200 mx-5 font-roboto text-xl cursor-pointer hover:underline">About us</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text-gray-200 mx-5 font-roboto text-xl cursor-pointer hover:underline">Contact Us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- login and register buttons -->
+                <div class="container flex w-80 justify-evenly">
+                    <a href="/src/Login.html">
+                        <span class="bg-gray-800 text-white uppercase py-2 px-4 rounded hover:bg-transparent hover:outline hover:text-gray-100 cursor-pointer hover:outline-gray-700">Sign In</span>
+                    </a>
+                    <a href="/src/Register.html">
+                        <span class="bg-transparent text-white uppercase py-2 px-4 outline rounded outline-gray-700 hover:bg-gray-700 hover:text-white cursor-pointer">Sign Up</span>
+                    </a>
+                </div>
+                
+            </div>
+
+        </nav>
+    <!-- end of navigation bar section -->
+
+    <!-- image banner section -->
+        <div class="bg-cover bg-center bg-no-repeat w-full py-32 px-40" 
+        style="background-image:url('https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        
+            <h3 class="text-white font-semibold capitalize text-3xl">Welcome to Interim Models, <br> a great site for your home and office.</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, debitis necessitatibus. Sit, vel.</p>
+
+            <a href="#" class="mt-10 flex"> <span class="bg-red-500 text-white rounded-md py-2 px-4 items-center w-44 text-start uppercase space-x-1 font-bold text-lg hover:bg-red-600 transition cursor-pointer">Shop Now</span> </a>
+
+        </div>
+    <!-- end of image banner section -->
+
+    <!-- features section -->
+        <div class="w-full h-44 mx-auto my-auto mt-10">
+            <div class="container px-44 py-5 gap-10 justify-center items-center flex">
+                <div class="px-2 py-1 border-2 border-red-400 flex rounded">
+                    <svg class="w-20 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"></path></svg>
+                    
+                    <div class="px-2 py-2 block justify-center items-center">
+                        <h4 class="text-lg text-gray-700 font-semibold">Free Delivery</h4>
+                        <span>When you spend over R400.00</span>
+                    </div>
+
+                </div>
+                <div class="px-2 py-1 border-2 border-red-400 flex rounded">
+                    <svg class="w-20 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    
+                    <div class="px-2 py-2 block justify-center items-center">
+                        <h4 class="text-lg text-gray-700 font-semibold">Money Refund</h4>
+                        <span>3 days money refund guaranteed</span>
+                    </div>
+
+                </div>
+
+                <div class="px-2 py-1 border-2 border-red-400 flex rounded">
+                    <svg class="w-20 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z" clip-rule="evenodd"></path></svg>
+                    
+                    <div class="px-2 py-2 block justify-center items-center">
+                        <h4 class="text-lg text-gray-700 font-semibold">24/7 Support</h4>
+                        <span>We are here to help you in time.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!-- end of features wrapper -->
+
+    <!-- shop by categories section -->
+        <div class="w-full h-44 mx-auto my-auto -mt-10 mb-14">
+            <div class="container px-44 py-8">
+                <h4 class="text-lg font-bold uppercase text-gray-900 border-b border-gray-200 w-full">Shop By Category</h4>
+                
+                <div class="container py-2 grid grid-cols-4 gap-10 justify-center items-center mt-5">
+                    <div class="relative overflow-hidden rounded-md cursor-pointer transparent hover:brightness-50">
+                        <img src="https://images.pexels.com/photos/789434/pexels-photo-789434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="brightness-50" alt="#">
+                        <span class="absolute left-0 right-0 my-auto myx-auto w-full text-center h-full top-20 text-lg text-white font-bold">Laptops</span>
+                    </div>
+                    <div class="relative overflow-hidden rounded-md items-center justify-center cursor-pointer transparent hover:brightness-50">
+                        <img src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="#" class="brightness-50">
+                        <span class="absolute left-0 right-0 my-auto myx-auto w-full text-center h-full top-20 text-lg text-white font-bold">Gaming Gadgets</span>
+                    </div>
+                    <div class="relative overflow-hidden rounded-md items-center justify-center cursor-pointer transparent hover:brightness-50">
+                        <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJpbnRlcnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="#" class="brightness-50">
+                        <span class="absolute left-0 right-0 my-auto myx-auto w-full text-center h-full top-20 text-lg text-white font-bold">Printers</span>
+                    </div>
+                    <div class="relative overflow-hidden rounded-md items-center justify-center cursor-pointer transparent hover:brightness-50">
+                        <img src="https://static01.nyt.com/images/2021/09/21/business/21techfix-phones/21techfix-phones-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="#" class="brightness-50">
+                        <span class="absolute left-0 right-0 my-auto myx-auto w-full text-center h-full top-20 text-lg text-white font-bold">Smart Phones</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!-- end of categories section -->
+
+    <!-- new product deals wrapper -->
+        <div class="w-full bg-gray-50 mt-16 flex z-10">
+            <div class="container px-44 py-14">
+                <h4 class="text-lg font-bold uppercase text-gray-800 border-b border-gray-200 w-full">Top Deals on Products</h4>
+
+                <div class="container py-2 grid grid-cols-4 gap-10 justify-center items-center mt-5">
+
+                    <div class="relative overflow-hidden rounded-md cursor-pointer bg-white shadow-sm">
+                        <img src="https://www.kindpng.com/picc/m/211-2115299_dealz-frenzy-multiclad-pro-cookware-set-classic-pots.png" class="brightness-50 h-36 w-full cover hover:brightness-75 transitionlo" alt="#">
+                        <span class="absolute left-0 right-0 my-auto myx-auto w-full text-center h-full top-20 text-lg text-white font-bold flex">
+
+                            <svg class="w-8 bg-red-400 rounded-full h-8 mx-2 p-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+
+                            <svg class="w-8 bg-red-400 rounded-full h-8 p-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+
+                        </span>
+
+                        <div class="flex w-full py-2 px-1 mt-2">
+                            <h4 class="text-gray-800 ">Product Name</h4>
+                        </div>
+
+                        <div class="flex px-1">
+                            <h5>R780.50 -</h5>
+                            <h6 class="px-4 line-through text-red-500">950.00</h6>
+                        </div>
+                        
+                        <div class="flex px-1 py-1 mb-5">
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <span class="text-sm text-gray-400">(120 reviews)</span>
+                        </div>
+
+                        <a href="#" class="px-1 w-full mt-10 flex">
+                            <span class="bg-red-500 w-full py-2 text-white font-bold px-6">Add To Cart</span>
+                        </a>
+
+                    </div>
+                
+                    <div class="relative overflow-hidden rounded-md cursor-pointer bg-white shadow-sm">
+                        <img src="https://images.macrumors.com/article-new/2020/11/m1-macbook-air.jpg" class="brightness-50 h-36 w-full cover hover:brightness-75 transitionlo" alt="#">
+                        <span class="absolute left-0 right-0 my-auto myx-auto w-full text-center h-full top-20 text-lg text-white font-bold flex">
+
+                            <svg class="w-8 bg-red-400 rounded-full h-8 mx-2 p-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+
+                            <svg class="w-8 bg-red-400 rounded-full h-8 p-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+
+                        </span>
+
+                        <div class="flex w-full py-2 px-1 mt-2">
+                            <h4 class="text-gray-800 ">Product Name</h4>
+                        </div>
+
+                        <div class="flex px-1">
+                            <h5>R780.50 -</h5>
+                            <h6 class="px-4 line-through text-red-500">950.00</h6>
+                        </div>
+                        
+                        <div class="flex px-1 py-1 mb-5">
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <span class="text-sm text-gray-400">(120 reviews)</span>
+                        </div>
+
+                        <a href="#" class="px-1 w-full mt-10 flex">
+                            <span class="bg-red-500 w-full py-2 text-white font-bold px-6">Add To Cart</span>
+                        </a>
+
+                    </div>
+                    <div class="relative overflow-hidden rounded-md cursor-pointer bg-white shadow-sm">
+                        <img src="https://www.maxbhi.com/images/detailed/4806/earphone_for_samsung_galaxy_a32_5g_by_maxbhicom.jpg" class="brightness-50 h-36 w-full cover hover:brightness-75 transitionlo" alt="#">
+                        <span class="absolute left-0 right-0 my-auto myx-auto w-full text-center h-full top-20 text-lg text-white font-bold flex">
+
+                            <svg class="w-8 bg-red-400 rounded-full h-8 mx-2 p-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+
+                            <svg class="w-8 bg-red-400 rounded-full h-8 p-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+
+                        </span>
+
+                        <div class="flex w-full py-2 px-1 mt-2">
+                            <h4 class="text-gray-800 ">Product Name</h4>
+                        </div>
+
+                        <div class="flex px-1">
+                            <h5>R780.50 -</h5>
+                            <h6 class="px-4 line-through text-red-500">950.00</h6>
+                        </div>
+                        
+                        <div class="flex px-1 py-1 mb-5">
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <span class="text-sm text-gray-400">(120 reviews)</span>
+                        </div>
+
+                        <a href="#" class="px-1 w-full mt-10 flex">
+                            <span class="bg-red-500 w-full py-2 text-white font-bold px-6">Add To Cart</span>
+                        </a>
+
+                    </div>
+
+                    <div class="relative overflow-hidden rounded-md cursor-pointer bg-white shadow-sm">
+                        <img src="https://provscons.com/wp-content/uploads/2021/01/Samsung-Galaxy-A32-5G.jpg" class="brightness-50 h-36 w-full cover hover:brightness-75 transitionlo" alt="#">
+                        <span class="absolute left-0 right-0 my-auto myx-auto w-full text-center h-full top-20 text-lg text-white font-bold flex">
+
+                            <svg class="w-8 bg-red-400 rounded-full h-8 mx-2 p-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+
+                            <svg class="w-8 bg-red-400 rounded-full h-8 p-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+
+                        </span>
+
+                        <div class="flex w-full py-2 px-1 mt-2">
+                            <h4 class="text-gray-800 ">Product Name</h4>
+                        </div>
+
+                        <div class="flex px-1">
+                            <h5>R780.50 -</h5>
+                            <h6 class="px-4 line-through text-red-500">950.00</h6>
+                        </div>
+                        
+                        <div class="flex px-1 py-1 mb-5">
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <span class="text-sm text-gray-400">(120 reviews)</span>
+                        </div>
+
+                        <a href="#" class="px-1 w-full mt-10 flex">
+                            <span class="bg-red-500 w-full py-2 text-white font-bold px-6">Add To Cart</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!-- end of new product deals-->
+
+    <!-- footer section -->
+        <div class="bg-black">
+            <div class="container px-44 py-8">
+                <div class="grid grid-cols-3 gap-10 justify-start items-center">
+                    <div>
+                        <div class="container items-center justify-start flex cursor-pointer">
+                            <svg class="w-12 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
+                            <h4 class="text-5xl capitalize text-gray-300">Inte<span class="text-red-300">rims</span></h4>
+                        </div>
+                        <p class="text-sm text-gray-50 text-justify flex py-4 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati praesentium assumenda. Dicta, deserunt iure. Magnam optio, aliquam hic atque earum doloribus adipisci, perferendis, est repellat mollitia ipsa minus. Doloribus.</p>
+                    </div>
+
+                    <div class="ml-20 justify-center">
+                        <h4 class="text-gray-200 text-2xl">Services</h4>
+                        <div class="w-full flex px-4 py-2">
+                            <ul>
+                                <li class="py-1 text-sm">
+                                    <a href="#"> <span class="text-white hover:text-orange-600">Home</span></a>
+                                </li>
+                                <li class="py-1 text-sm">
+                                    <a href="#"><span class="text-white hover:text-orange-600">Shop</span></a>
+                                </li>
+                                <li class="py-1 text-sm">
+                                    <a href="#"><span class="text-white hover:text-orange-600">About Us</span></a>
+                                </li>
+                                <li class="py-1 text-sm">
+                                    <a href="#"><span class="text-white hover:text-orange-600">Contact Us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ml-10">
+                        <h4 class="text-gray-200 text-2xl">Get In Touch</h4>
+                        <!-- <span class="text-gray-50 text-sm px-4">you can send your message.</span> -->
+                        <div class="w-full px-4 py-2">
+                            <div class="flex items-center bg-white shadow-md w-full rounded py-1">
+                                <svg class="w-8 px-1 text-gray-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                                <input type="text" name="name" id="user-name" placeholder="Enter Full Names" class="px-2">
+                            </div>
+                            <div class="flex items-center bg-white shadow-md w-full rounded py-1 mt-2">
+                                <svg class="w-8 px-1 text-gray-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                                <input type="email" name="email" id="user-email" placeholder="Enter email address" class="px-2">
+                            </div>
+                            <div class="flex items-center bg-white shadow-md w-full rounded py-1 mt-2 justify-center">
+                                <!-- <svg class="w-8 px-1 text-gray-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd"></path></svg> -->
+                                <textarea name="user-message" id="user-message" cols="40" rows="2" placeholder="Enter your message" class="items-center justify-cente flex px-1"></textarea>
+                            </div>
+                            <span class="bg-red-600 text-white text-lg font-semibold flex mt-5 rounded-sm px-2 w-52 text-center items-center py-1 hover:bg-red-400 transition">Submit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- end of footer section -->
+
+    <!-- terms,policy,copyright section -->
+    <div class="w-full bg-gray-700">
+        <div class="container px-44 py-1 flex justify-between">
+
+            <span class="text-white">
+                &COPY; iterims 2022 www.iterimmodels.com
+            </span>
+
+            <div class="flex">
+                <ul class="flex">
+                    <li><a href="#" class="text-gray-100 text-sm px-2 hover:text-gray-500 transition cursor-pointer">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-gray-100 text-sm px-2 hover:text-gray-500 transition cursor-pointer">Policy Services</a></li>
+                    <li><a href="#" class="text-gray-100 text-sm px-2 hover:text-gray-500 transition cursor-pointer">Manage Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

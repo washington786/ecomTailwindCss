@@ -1,0 +1,16 @@
+{
+  "name": "ecomtailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwind build tailwind.css -o src/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "tailwindcss": "^3.0.23"
+  }
+}
